@@ -9,10 +9,9 @@ public class Discounts {
 
     //Количество рубашек, которые надо купить, чтобы получить скидку.
     static final int discountShirt = 10;
-
     //Скидка.
-    static final float percentDiscount = 10 / 100F;
 
+    static final float percentDiscount = 10 / 100F;
     public static void main(String[] args) {
         // количество рубашек, которые надо добавить к купленным,чтобы получить скидку.
         int quantityShirt2 = discountShirt - quantityShirt;

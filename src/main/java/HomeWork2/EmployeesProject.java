@@ -17,24 +17,20 @@ package HomeWork2;
 
 //Объявить целочисленную переменную, в которой количество общее количество технических специалистов на проекте.
 //Количество нужно рассчитывать исходя из значений предыдущих переменных
-
-
 public class EmployeesProject {
     static final int programmers = 2;
     static final int testers = 2;
     static final int support = 1;
-
     public static void main(String[] args) {
         int testersProject = programmers * testers;
         int supportProject = programmers * support;
         int specialistsProject = programmers + testersProject + supportProject;
 
-        System.out.println("количество программистов " + programmers);
-        System.out.println("количество тестировщиков на одного программиста " + testers);
-        System.out.println("количество специалистов поддержки на одного программиста " + support);
-        System.out.println("количество тестировщиков, требуемое на проекте " + testersProject);
-        System.out.println("количество специалистов поддержки, требуемое на проекте " + supportProject);
-        System.out.println("бщее количество технических специалистов на проекте " + specialistsProject);
+        System.out.println("Количество программистов " + programmers);
+        System.out.println("Количество тестировщиков на одного программиста " + testers);
+        System.out.println("Количество специалистов поддержки на одного программиста " + support);
+        System.out.println("Количество тестировщиков, требуемое на проекте " + testersProject);
+        System.out.println("Количество специалистов поддержки, требуемое на проекте " + supportProject);
+        System.out.println("Общее количество технических специалистов на проекте " + specialistsProject);
     }
-
 }

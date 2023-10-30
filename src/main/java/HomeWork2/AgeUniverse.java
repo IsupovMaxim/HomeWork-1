@@ -13,9 +13,8 @@ public class AgeUniverse {
     public static void main(String[] args) {
         long relativity = ageUniverse / agePerson;
 
-        System.out.println("возраст Вселенной равен " + (ageUniverse/1000000000) + " миллиардов лет");
-        System.out.println("возраст человека равен " + (agePerson/1000) + " тысяч лет");
+        System.out.println("Возраст Вселенной равен " + (ageUniverse/1000000000) + " миллиардов лет");
+        System.out.println("Возраст человека равен " + (agePerson/1000) + " тысяч лет");
         System.out.println("Вселенная старше людей в " + relativity + " раз");
-
     }
 }

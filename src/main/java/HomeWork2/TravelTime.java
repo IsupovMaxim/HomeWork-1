@@ -10,13 +10,10 @@ package HomeWork2;
 
 //Объявить дробную переменную, в которой время, за которое тестировщик добирается на такси с работы домой.
 //Для вычисления этого времени нужно умножить время за которое тестировщик обычно добирается от дома до офиса на коэффициент.
-
-
 public class TravelTime {
     static final int route = 20;
     static final float speed = 65.5F;
     static final float coefficient = 1.8F;
-
     public static void main(String[] args) {
         float travelTime1 = route / speed * 60; // время в минутах
         float travelTime2 = travelTime1 * coefficient;
@@ -26,8 +23,5 @@ public class TravelTime {
         System.out.println("Коэффициент замедления транспорта вечером " + coefficient);
         System.out.println("Время в пути без коофициента замедления - " + travelTime1 + " минут ");
         System.out.println("Время в пути с коофициентом - " + travelTime2 + " минуты ");
-
-
     }
-
 }
