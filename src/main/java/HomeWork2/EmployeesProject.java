@@ -21,6 +21,7 @@ public class EmployeesProject {
     static final int programmers = 2;
     static final int testers = 2;
     static final int support = 1;
+
     public static void main(String[] args) {
         int testersProject = programmers * testers;
         int supportProject = programmers * support;

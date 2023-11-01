@@ -8,6 +8,7 @@ package HomeWork2;
 public class Mortgage {
     static final int apartmentPrice= 7500000;
     static final float downPayment = 30/100F;
+
     public static void main(String[] args) {
         float DownPaymentPrice = apartmentPrice * downPayment;
 

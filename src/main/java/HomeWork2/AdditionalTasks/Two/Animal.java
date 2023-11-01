@@ -1,18 +1,8 @@
 package HomeWork2.AdditionalTasks.Two;
 
 public abstract class Animal {
-    public static void main(String[] args){
-              Cat cat1 = new Cat();
-              cat1.name = "Кот";
-              cat1.move();
+    public abstract void move();
+}
 
-              Fish fish1 = new Fish();
-              fish1.name = "Рыба";
-              fish1.move();
 
-              Duck duck1 = new Duck();
-              duck1.name = "Утка";
-              duck1.move();
-          }
-    }
 

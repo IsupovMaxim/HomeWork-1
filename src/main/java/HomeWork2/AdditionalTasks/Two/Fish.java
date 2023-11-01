@@ -1,9 +1,11 @@
 package HomeWork2.AdditionalTasks.Two;
 
-public class Fish extends Animal{
-    String name;
-    void move(){
-        System.out.println(name + " - я поплыла");
-    }
+ class Fish extends Animal{
+     String name;
+     @Override
+     public void move() {
 
-}
+     System.out.println(name + " - я поплыла.");
+
+     }
+ }

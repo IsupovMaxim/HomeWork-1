@@ -8,6 +8,7 @@ package HomeWork2;
 public class SarumanLannisters {
          static final int soldiers = 3000;
          static final  int orcs = 2000;
+
     public static void main(String[] args) {
         int union = soldiers + orcs;
 

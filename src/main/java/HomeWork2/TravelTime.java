@@ -14,6 +14,7 @@ public class TravelTime {
     static final int route = 20;
     static final float speed = 65.5F;
     static final float coefficient = 1.8F;
+
     public static void main(String[] args) {
         float travelTime1 = route / speed * 60; // время в минутах
         float travelTime2 = travelTime1 * coefficient;

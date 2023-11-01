@@ -1,8 +1,15 @@
 package HomeWork2.AdditionalTasks.Two;
 
-public class Cat extends Animal {
-     String name;
-     void move(){
-        System.out.println(name + " - я побежал ");
+class Cat extends Animal {
+    String name;
+    @Override
+    public void move() {
+
+        System.out.println(name + " - я побежал.");
     }
 }
+//     String name;
+//     void move(){
+//        System.out.println(name + " - я побежал ");
+//    }
+

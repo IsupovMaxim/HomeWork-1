@@ -9,6 +9,7 @@ package HomeWork2;
 public class PinocchioApples {
     static final int pinocchioApples = 10;
     static final int BarabasPickedApples = 5;
+
     public static void main(String[] args) {
          int PinocchioApplesLeft = pinocchioApples - BarabasPickedApples;
 

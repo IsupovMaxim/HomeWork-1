@@ -9,6 +9,7 @@ package HomeWork2;
 public class Cup {
     static final int volumeCup = 500;
     static final float percent = 25/100f;
+
     public static void main(String[] args) {
         float waterCup = volumeCup * percent;
 
