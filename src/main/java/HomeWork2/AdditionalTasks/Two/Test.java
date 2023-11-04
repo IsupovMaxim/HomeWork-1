@@ -13,6 +13,5 @@ public class Test {
               Duck duck1 = new Duck();
               duck1.name = "Утка";
               duck1.move();
-
     }
 }

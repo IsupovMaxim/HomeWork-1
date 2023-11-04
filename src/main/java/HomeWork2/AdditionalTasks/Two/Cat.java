@@ -8,8 +8,4 @@ class Cat extends Animal {
         System.out.println(name + " - я побежал.");
     }
 }
-//     String name;
-//     void move(){
-//        System.out.println(name + " - я побежал ");
-//    }
 
