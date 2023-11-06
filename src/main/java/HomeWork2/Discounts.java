@@ -48,18 +48,3 @@ public class Discounts {
         System.out.println("Можете приобрести - " + quantityShirt3 + " рубашку ");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

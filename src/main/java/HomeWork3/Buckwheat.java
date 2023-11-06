@@ -14,19 +14,17 @@ package HomeWork3;
 // УСЛОВИЕ!!! В начале задавать в переменной не сколько килограммов запас Василий,
 // а в течение какого срока он хочет питаться гречкой и рассчитывать остальное, исходя из этого.
 public class Buckwheat {
-    static int totalBuckwheat = 100;
-    static int buckwheatСonsumption = 6;
-    static int buckwheatPrice = 100;
-    static int n = 16;
-    static int storagePrice = 0;
+    static int totalBuckwheat = 100; //всего гречки (кг);
+    static int buckwheatСonsumption = 6; //расход гречки в месяц (кг);
+    static int buckwheatPrice = 100;//стоимость 1кг гречки;
+    static int n = totalBuckwheat / buckwheatСonsumption;//вермя хранения гречки(месяц).
+    static int storagePrice;//общая стоимость хранения гречки
+
     public static void main(String[] args) {
-        for (int i = 0; i <= n; i++) {
+        for (int i = 0; i <= n; i++) { //перебираем значения, где i - представляет текущий период.
             int price = (totalBuckwheat - i * buckwheatСonsumption) * buckwheatPrice;
-            storagePrice += price;
+            storagePrice += price;// складываем полученные периоды и присваиваем к общей стоимости.
         }
         System.out.println(storagePrice);
     }
 }
-
-
-
