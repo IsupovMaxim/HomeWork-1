@@ -11,20 +11,46 @@ package HomeWork3;
 // Написать программу, которая посчитает сколько денег нужно будет Василию,
 // чтобы оплатить хранение гречки, до того момента, как он её съест.
 
+import java.util.Scanner;
+
 // УСЛОВИЕ!!! В начале задавать в переменной не сколько килограммов запас Василий,
 // а в течение какого срока он хочет питаться гречкой и рассчитывать остальное, исходя из этого.
 public class Buckwheat {
     static int totalBuckwheat = 100; //всего гречки (кг);
     static int buckwheatСonsumption = 6; //расход гречки в месяц (кг);
     static int buckwheatPrice = 100;//стоимость 1кг гречки;
-    static int n = totalBuckwheat / buckwheatСonsumption;//вермя хранения гречки(месяц).
-    static int storagePrice;//общая стоимость хранения гречки
 
     public static void main(String[] args) {
-        for (int i = 0; i <= n; i++) { //перебираем значения, где i - представляет текущий период.
-            int price = (totalBuckwheat - i * buckwheatСonsumption) * buckwheatPrice;
-            storagePrice += price;// складываем полученные периоды и присваиваем к общей стоимости.
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ведите кол-во месяцев");
+
+        int numbers = scanner.nextInt();
+        int[] n = new int[numbers];
+        for (int i = 0; i < numbers; i++) {
+            n[i] = buckwheatСonsumption + (buckwheatСonsumption * i);
         }
-        System.out.println(storagePrice);
+        for (int i = 0; i < numbers; i++) {
+            System.out.println(n[i] * buckwheatPrice);
+        }
+        int sum = 0;
+        for (int i = 0; i < numbers; i++) {
+            sum += n[i];
+            System.out.println();
+            System.out.println(sum * buckwheatPrice);
+        }
     }
 }
+//    static int totalBuckwheat = 100; //всего гречки (кг);
+//    static int buckwheatСonsumption = 6; //расход гречки в месяц (кг);
+//    static int buckwheatPrice = 100;//стоимость 1кг гречки;
+//    static int n = totalBuckwheat / buckwheatСonsumption;//вермя хранения гречки(месяц).
+//    static int storagePrice;//общая стоимость хранения гречки
+//
+//    public static void main(String[] args) {
+//        for (int i = 0; i <= n; i++) { //перебираем значения, где i - представляет текущий период.
+//            int price = (totalBuckwheat - i * buckwheatСonsumption) * buckwheatPrice;
+//            storagePrice += price;// складываем полученные периоды и присваиваем к общей стоимости.
+//        }
+//        System.out.println(storagePrice);
+//    }
+//}
