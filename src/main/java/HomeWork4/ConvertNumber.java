@@ -24,12 +24,16 @@ import java.util.Scanner;
 //    }
 //}
 public class ConvertNumber {
+    public static void main(String[] args) {
+        for ( int i = -5; i < 6; i++){
+            System.out.println(convertNumber(i));
+        }
+    }
     public static String convertNumber(int number) {
         String result = (number > 0)
                 ? (number % 7 < 4 ? "positive - m" : "positive - p")
                 : (number == 0)
-                ? (number % 7 > -4 ? "negative - m" : "negative - p")
-                : "zero";
+                ? "zero" : (number % 7 > -4 ? "negative - m" : "negative - p");
         return result;
     }
 }
