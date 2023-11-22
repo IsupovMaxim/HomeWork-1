@@ -4,11 +4,10 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import static io.restassured.RestAssured.*;
 import static org.junit.Assert.assertEquals;
 
 
-public class Positive {
+public class Technique {
     private static final String BOOKING_URL = "https://restful-booker.herokuapp.com";
 
     public static Response token(String TOKEN_BODY) {
